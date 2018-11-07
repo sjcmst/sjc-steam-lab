@@ -15,7 +15,6 @@
     "gulp-babel": "^6.1.2",
     "gulp-changed": "^2.0.0",
     "gulp-clean-css": "^3.0.3",
-    "gulp-cli4": "^0.1.0",
     "gulp-connect": "^5.0.0",
     "gulp-eslint": "^3.0.1",
     "gulp-htmlmin": "^3.0.0",
@@ -43,14 +42,14 @@
     "pug",
     "pug2"
   ],
+  "scripts": {
+    "start": "node_modules/gulp/bin/gulp.js serve",
+    "build": "node_modules/gulp/bin/gulp.js build --all"
+  },
   "license": "MIT",
   "main": "Gruntfile.js",
   "repository": "https://github.com/andersoo/gulp-pug-es7-less",
-  "scripts": {
-    "build": "node_modules/gulp4/bin/gulp build --all",
-    "start": "node_modules/gulp-cli4/bin/gulp.js serve"
-  },
   "dependencies": {
-    "gulp": "gulpjs/gulp.git#4.0"
+    "gulp": "4"
   }
 }
