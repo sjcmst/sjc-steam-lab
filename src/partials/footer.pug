@@ -1,22 +1,23 @@
 .container
     footer.page-footer.font-small.blue.pt-4#footer
         .container-fluid.text-center
-            .row(height="40px")
+            .row(style={height:"40px"})
             .row
                 .col-2
                 .col-3
-                    h5.text-uppercase JOIN US
+                    h5.text-uppercase
+                        a.text-white(href="#!") JOIN US
                 .col-3
-                    button.btn
-                        span.slack-button-content
-                            a.color-inherit(href="#!") SLACK
+                    button.btn.slack-button
+                        a.slack-button-content(href="#!") SLACK
 
-            .row
-            hr
+            .row(style={height:"50px"})
+            hr#white-line
             .row
                 .col-2
                 .col-md-2.mb-md-0.mb-5.mt-8
-                    h5.text-white.small-header.text-left(color="inherit") COMPANY
+                    h5.small-header.text-left
+                        a.text-white(href="#!") COMPANY
 
                     ul.list-unstyled.text-left
                         li 
@@ -27,38 +28,46 @@
                             a(href="#!") STORE
                         li 
                             a(href="#!") DOWNLOAD
+                
                 .col-md-2.mb-md-0.mb-5.mt-8
-                    h5.text-white COMPANY
-                    ul.list-unstyled.text-left
-                        li 
-                            a(href="#!") HOME
-                        li 
-                            a(href="#!") FEATURES
-                        li 
-                            a(href="#!") STORE
-                        li 
-                            a(href="#!") DOWNLOAD
-                .col-md-2.mb-md-0.mb-5.mt-8
-                    h5.text-white COMPANY
-                    ul.list-unstyled.text-left
-                        li 
-                            a(href="#!") HOME
-                        li 
-                            a(href="#!") FEATURES
-                        li 
-                            a(href="#!") STORE
-                        li 
-                            a(href="#!") DOWNLOAD
-                .col-md-2.mb-md-0.mb-5.mt-8
-                    h5.text-white COMPANY
-                    ul.list-unstyled.text-left
-                        li 
-                            a(href="#!") HOME
-                        li 
-                            a(href="#!") FEATURES
-                        li 
-                            a(href="#!") STORE
-                        li 
-                            a(href="#!") DOWNLOAD
+                    h5.small-header.text-left
+                        a.text-white(href="#!") ABOUT
 
+                    ul.list-unstyled.text-left
+                        li 
+                            a(href="#!") ABOUT US
+                        li 
+                            a(href="#!") BLOG
+                        li 
+                            a(href="#!") PRIVACY
+                        li 
+                            a(href="#!") TERMS OF SERVICE
+                
+                .col-md-2.mb-md-0.mb-5.mt-8
+                    h5.small-header.text-left
+                        a.text-white(href="#!") HELP
+
+                    ul.list-unstyled.text-left
+                        li 
+                            a(href="#!") HELP CENTER
+                        li 
+                            a(href="#!") GET STARTED
+                        li 
+                            a(href="#!") CONTACT US
+                        li 
+                            a(href="#!") FAQ
+                
+                .col-md-2.mb-md-0.mb-5.mt-8
+                    h5.small-header.text-left
+                        a.text-white(href="#!") CONNECT
+
+                    ul.list-unstyled.text-left
+                        li 
+                            a(href="#!") SOCIAL 1
+                        li 
+                            a(href="#!") SOCIAL 2
+                        li 
+                            a(href="#!") SOCIAL 3
+                .col-2
+            .row(style={height:"30px"})
             
