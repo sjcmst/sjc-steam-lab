@@ -1,17 +1,78 @@
 extends ../layouts/default.pug
 
 block body
-  .row.justify-content-center
-    .col-6.col-sm-4.col-md-3.pt-5
-      img(src='/images/yeoman.png' width='100%')
-    .col-12.pt-5
-      h1.text-center 'Allo, Thanks for using this template! 
-    .col-12.pt-3
-      p.text-center
-        | Visit the project's
-        a(href="https://github.com/andersoo/gulp-pug-es7-less") &nbsp;git&nbsp;
-        | for more information.
+    .row.justify-content-center
+        .col-6.col-sm-4.col-md-3.pt-5
+            img(src='/images/yeoman.png' width='100%')
+        .col-12.pt-5
+            h1.text-center 'Allo, Thanks for using this template! 
+        .col-12.pt-3
+            p.text-center
+                | Visit the project's
+                a(href="https://github.com/andersoo/gulp-pug-es7-less") &nbsp;git&nbsp;
+                | for more information.
 
+    .container
+        footer.page-footer.font-small.blue.pt-4#footer
+            .container-fluid.text-center
+                .row(height="40px")
+                .row
+                    .col-2
+                    .col-3
+                        h5.text-uppercase JOIN US
+                    .col-3
+                        button.btn
+                            span.slack-button-content
+                                a.color-inherit(href="#!") SLACK
 
+                .row
+                hr
+                .row
+                    .col-2
+                    .col-md-2.mb-md-0.mb-5.mt-8
+                        h5.text-white.small-header.text-left(color="inherit") COMPANY
 
-    
+                        ul.list-unstyled.text-left
+                            li 
+                                a(href="#!") HOME
+                            li 
+                                a(href="#!") FEATURES
+                            li 
+                                a(href="#!") STORE
+                            li 
+                                a(href="#!") DOWNLOAD
+                    .col-md-2.mb-md-0.mb-5.mt-8
+                        h5.text-white COMPANY
+                        ul.list-unstyled.text-left
+                            li 
+                                a(href="#!") HOME
+                            li 
+                                a(href="#!") FEATURES
+                            li 
+                                a(href="#!") STORE
+                            li 
+                                a(href="#!") DOWNLOAD
+                    .col-md-2.mb-md-0.mb-5.mt-8
+                        h5.text-white COMPANY
+                        ul.list-unstyled.text-left
+                            li 
+                                a(href="#!") HOME
+                            li 
+                                a(href="#!") FEATURES
+                            li 
+                                a(href="#!") STORE
+                            li 
+                                a(href="#!") DOWNLOAD
+                    .col-md-2.mb-md-0.mb-5.mt-8
+                        h5.text-white COMPANY
+                        ul.list-unstyled.text-left
+                            li 
+                                a(href="#!") HOME
+                            li 
+                                a(href="#!") FEATURES
+                            li 
+                                a(href="#!") STORE
+                            li 
+                                a(href="#!") DOWNLOAD
+
+                
