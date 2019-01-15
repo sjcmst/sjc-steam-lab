@@ -1,18 +1,27 @@
 .container-fluid.bg-white.sticky-top#sjc-navbar
   .container.bg-white
-    .row
-      nav.navbar.navbar-toggleable-sm.navbar-inverse.bg-white.col-12.no-gutters.justify-content-between
-        button.navbar-toggler.navbar-toggler-right.collapsed(type='button', data-toggle='collapse', data-target='#theNavBar', aria-controls='theNavBar', aria-expanded='false', aria-label='Toggle navigation')
-          span.navbar-toggler-icon
-          
-        a.navbar-brand(href='#' ) SJC STEAM Lab
-        #theNavBar.collapse.navbar-collapse
-          ul.navbar-nav.mr-auto
-            li.nav-item
-              a.nav-link(href='/') CONTACT
-            li.nav-item
-              a.nav-link(href='/about.html') ABOUT
-            li.nav-item
-              a.nav-link(href='/') STUDENTS
+    nav.navbar.navbar-toggleable-sm.navbar-inverse.bg-white.col-12.no-gutters.justify-content-between
+      a.navbar-brand(href='#') SJC STEAM Lab
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#sjc-navbar-items', aria-controls='theNavBar', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #sjc-navbar-items.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          li.nav-item
+            a.nav-link(href='/') CONTACT
+          li.nav-item.dropdown
+            a#dropdown_about.nav-link.dropdown-toggle(href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") ABOUT
+              //- this is a plus sign, however it doesnt show up (https://useiconic.com/open)
+              span.oi.oi-plus(title="plus" aria-hidden="true")
+            .dropdown-menu(aria-labelledby="dropdown_about")
+              //- sorry cannot figure out how to click on the dropdown menu directly
+              a.dropdown-item(href="about.html") ABOUTS
+              a.dropdown-item(href="#") PROJECTS
+              a.dropdown-item(href="#") FAQ
+          li.nav-item
+            a.nav-link(href='/') STUDENTS
+          if(current_page=="index")
             li.nav-item.active
+              a.nav-link(href='/index.html') HOME
+          else
+            li.nav-item
               a.nav-link(href='/index.html') HOME

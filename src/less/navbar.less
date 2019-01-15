@@ -1,23 +1,41 @@
 @sjc_green_color: #1B5E1F;
 
-.navbar{
-    background-color: #FFF;
-}
-.nav-link{
-    color: lavender;
-}
-.nav-item.active .nav-link{
-    color: @sjc_green_color;
-}
-#html_theNavBar_brand{
-    color: @sjc_green_color;
-}
-
 #sjc-navbar{
+    background-color: #FFF;
+    //Trying to make the nav-items align to the right, but failed
+    display: flex;
+    justify-content: flex-end;
+
 	a.navbar-brand{
 		color: @sjc_green_color;
 	}
-	.nav-link{
+	a.nav-link{
     color: lavender;
-	}
+    }
+    .nav-item.active a{
+        color: @sjc_green_color;
+    }
+}
+#sjc-navbar-items{
+    ul li.dropdown{
+        .dropdown-menu{
+            //trying to make the dropdown more similar to the design template
+            border: none;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            min-width: 0;
+            a{
+                color: lavender;
+            }
+            .dropdown-item{
+                padding-top: 0rem;
+                padding-bottom: 0rem;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+        /*dropdown-toggle::after {
+            display: none;
+        }*/
+    } 
 }
