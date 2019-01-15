@@ -1,4 +1,5 @@
-@sjc_green_color: #1B5E1F;
+@import "variable.less";
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
 body,
 html {
@@ -8,7 +9,7 @@ html {
 
 body {
     background-color: white;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto serif', serif;
 }
 
 .btn:focus,
@@ -37,15 +38,13 @@ button:focus {
     font-size: 12px;
 }
 .slack-button{
-    color: white;
+    background: white;
+    color: @sjc_green_color;
     padding-left: 30px;
     padding-right: 30px;
+}
+//     text-decoration: none;
 
-}
-.slack-button-content{
-    color: @sjc_green_color;
-    text-decoration: none;
-}
 #white-line{
     width: 90%;
     border-color: white;
