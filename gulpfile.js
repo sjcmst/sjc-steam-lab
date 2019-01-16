@@ -116,7 +116,8 @@ gulp.task('scripts', function() {
 })
 
 gulp.task('styles', function() {
-  return gulp.src(['src/less/**/*.less'])
+  //NOTE: force all less to be filled in main.less
+  return gulp.src(['src/less/main.less'])
     .pipe(plugins.changed('public/css'))
     .pipe(plugins.less({
       plugins: [autoprefix]
