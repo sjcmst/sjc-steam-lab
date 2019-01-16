@@ -1,9 +1,16 @@
 .container-fluid.bg-white.sticky-top#sjc-navbar
   .container.bg-white
-    nav.navbar.navbar-toggleable-sm.navbar-inverse.bg-white.col-12.no-gutters.justify-content-between
+
+    nav.navbar.navbar-toggleable-sm.navbar-inverse.bg-white.row.justify-content-between
+
       a.navbar-brand(href='#') SJC STEAM Lab
+      
       button.navbar-toggler(type='button', data-toggle='collapse', data-target='#sjc-navbar-items', aria-controls='theNavBar', aria-expanded='false', aria-label='Toggle navigation')
         span.navbar-toggler-icon
+      
+
+      - var currentPage = '' || currentPage;
+
       #sjc-navbar-items.collapse.navbar-collapse
         ul.navbar-nav.mr-auto
           li.nav-item
@@ -19,9 +26,7 @@
               a.dropdown-item(href="#") FAQ
           li.nav-item
             a.nav-link(href='/') STUDENTS
-          if(current_page=="index")
-            li.nav-item.active
-              a.nav-link(href='/index.html') HOME
-          else
-            li.nav-item
-              a.nav-link(href='/index.html') HOME
+
+          li.nav-item(class={'active': currentPage === 'index'})
+            a.nav-link(href='/index.html') HOME
+
