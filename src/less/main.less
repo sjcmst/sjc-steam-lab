@@ -1,53 +1,13 @@
-@sjc_green_color: #1B5E1F;
+//Fonts from Google, Need to be loaded before variables
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif');
 
-body,
-html {
-    height: 100%;
-    position: relative;
-}
+//base layouts
+@import "variable.less";
+@import "base.less";
 
-body {
-    background-color: white;
-    font-family: 'Noto Serif', serif;
-}
+//common partials
+@import "navbar.less";
+@import "footer.less";
 
-.btn:focus,
-a:focus,
-button:focus {
-    outline: none;
-}
-
-.navbar-white .navbar-toggler {
-    cursor: pointer;
-}
-
-#main {
-    background-color: white;
-    min-height: 100%;
-}
-
-#footer {
-    background-color: @sjc_green_color;
-}
-.list-unstyled li a{
-    color: white;
-    font-size: 8px;
-}
-.small-header{
-    font-size: 12px;
-}
-.slack-button{
-    color: white;
-    padding-left: 30px;
-    padding-right: 30px;
-
-}
-.slack-button-content{
-    color: @sjc_green_color;
-    text-decoration: none;
-}
-#white-line{
-    width: 90%;
-    border-color: white;
-    border-width: 3px 10px;
-}
+//page specifics
+@import "homepage.less";
