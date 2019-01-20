@@ -2,13 +2,16 @@
 
 #sjc-navbar{
     background-color: #FFF;
-    //Trying to make the nav-items align to the right, but failed
-    display: flex;
-    justify-content: flex-end;
-
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
 	a.navbar-brand{
 		color: @sjc_green_color;
-	}
+    }
 	a.nav-link{
     color: lavender;
     }
@@ -34,8 +37,9 @@
                 padding-right: 0.5rem;
             }
         }
-        /*dropdown-toggle::after {
-            display: none;
-        }*/
+        .nav-link::after{
+            content: "+";
+            padding-left: 0.5rem;
+        }
     } 
 }
