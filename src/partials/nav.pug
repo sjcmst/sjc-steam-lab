@@ -10,18 +10,17 @@
 
         #sjc-navbar-items.collapse.navbar-collapse
           ul.navbar-nav.mr-auto
-            li.nav-item
-              a.nav-link(href='/') CONTACT
+            li.nav-item(class={'active': currentPage === 'contact'})
+              a.nav-link(href='contact.html') CONTACT
             li.nav-item.dropdown
               a#dropdown_about.nav-link(href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") ABOUT
               .dropdown-menu(aria-labelledby="dropdown_about")
                 //- sorry cannot figure out how to click on the dropdown menu directly
-                a.dropdown-item(href="about.html") ABOUTS
-                a.dropdown-item(href="#") PROJECTS
-                a.dropdown-item(href="#") FAQ
-            li.nav-item
-              a.nav-link(href='/') STUDENTS
-
+                a.dropdown-item(href="about.html" class={'active': currentPage === 'about'}) ABOUTS
+                a.dropdown-item(href="projects.html" class={'active': currentPage === 'projects'}) PROJECTS
+                a.dropdown-item(href="faq.html" class={'active': currentPage === 'faq'}) FAQ
+            li.nav-item(class={'active': currentPage === 'students'})
+              a.nav-link(href='students.html') STUDENTS
             li.nav-item(class={'active': currentPage === 'index'})
-              a.nav-link(href='/index.html') HOME
+              a.nav-link(href='index.html') HOME
 
