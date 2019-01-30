@@ -1,32 +1,26 @@
 .container-fluid.bg-white.sticky-top#sjc-navbar
   .container.bg-white
+    nav.navbar.navbar-toggleable-sm.navbar-light.bg-white.row.flex-container
+      .flex-item
+        a.navbar-brand(href='index.html') SJC STEAM Lab
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#sjc-navbar-items', aria-controls='theNavBar', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+      .flex-item
+        - var currentPage = '' || currentPage;
 
-    nav.navbar.navbar-toggleable-sm.navbar-inverse.bg-white.row.justify-content-between
-
-      a.navbar-brand(href='#') SJC STEAM Lab
-      
-      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#sjc-navbar-items', aria-controls='theNavBar', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      
-
-      - var currentPage = '' || currentPage;
-
-      #sjc-navbar-items.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-          li.nav-item
-            a.nav-link(href='/') CONTACT
-          li.nav-item.dropdown
-            a#dropdown_about.nav-link.dropdown-toggle(href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") ABOUT
-              //- this is a plus sign, however it doesnt show up (https://useiconic.com/open)
-              span.oi.oi-plus(title="plus" aria-hidden="true")
-            .dropdown-menu(aria-labelledby="dropdown_about")
-              //- sorry cannot figure out how to click on the dropdown menu directly
-              a.dropdown-item(href="about.html") ABOUTS
-              a.dropdown-item(href="#") PROJECTS
-              a.dropdown-item(href="#") FAQ
-          li.nav-item
-            a.nav-link(href='/') STUDENTS
-
-          li.nav-item(class={'active': currentPage === 'index'})
-            a.nav-link(href='/index.html') HOME
+        #sjc-navbar-items.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item(class={'active': currentPage === 'contact'})
+              a.nav-link(href='contact.html') CONTACT
+            li.nav-item.dropdown
+              a#dropdown_about.nav-link(href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") ABOUT
+              .dropdown-menu(aria-labelledby="dropdown_about")
+                //- sorry cannot figure out how to click on the dropdown menu directly
+                a.dropdown-item(href="about.html" class={'active': currentPage === 'about'}) ABOUTS
+                a.dropdown-item(href="projects.html" class={'active': currentPage === 'projects'}) PROJECTS
+                a.dropdown-item(href="faq.html" class={'active': currentPage === 'faq'}) FAQ
+            li.nav-item(class={'active': currentPage === 'students'})
+              a.nav-link(href='students.html') STUDENTS
+            li.nav-item(class={'active': currentPage === 'index'})
+              a.nav-link(href='index.html') HOME
 
