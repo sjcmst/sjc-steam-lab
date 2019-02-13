@@ -10,6 +10,11 @@
     }
     #feature-equipment-1{
         background-color: @grey_bg_color;
+        background-image: url("/images/numbers.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
         color: #000;
         .col-xl-4{
             padding: @padding;
@@ -18,7 +23,6 @@
             padding-right: 0px;
             padding-left: 0px;
             img{
-                height: 100%;
             }
         }
         padding-bottom: 0px;
@@ -33,14 +37,14 @@
             padding-right: 0px;
             padding-left: 0px;
             img{
-                height: 100%;
+                //height: 100%;
             }
         }
     }
     #team{
-        padding: @padding;
         background-color: @grey_bg_color;
         color: #000;
+
         .meet_the_team{
             text-align: center;
             color: @blue_color;
@@ -61,8 +65,7 @@
             width: 60%;
             padding-bottom: 60%;
             position: relative;
-            //trying to change it to center
-            /*justify-content: center;*/
+            margin: 0 auto;
         }
         .person-icon{
             position: absolute;
@@ -74,5 +77,3 @@
         width: 100%;
     }
 }
-
-

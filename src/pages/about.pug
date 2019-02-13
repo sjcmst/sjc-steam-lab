@@ -1,9 +1,9 @@
 extends ../layouts/default.pug
-block variables
+block append variables
     - var currentPage="about";
 
-block body
-    div
+block content
+    .container-fluid
         .row#about-steam-lab
             .col-xl-4.col-lg-4.col-md-5.col-sm-12.col-12
                 img(src="images/sjc-badge.jpg" alt="school badge")
@@ -22,7 +22,7 @@ block body
                     malesuada lacinia ac ut quam. Ut vel laoreet est.
                 p.
                     Morbi interdum viverra ipsum.
-        .row#feature-equipment-1
+        .row#feature-equipment-1.grayscale
             .col-xl-4.col-lg-4.col-md-5.col-sm-12.col-12
                 p.title FEATURE EQUIPMENT 1
                 p.
@@ -32,8 +32,8 @@ block body
                     enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.
-            .col-xl-8.col-lg-8.col-md-7.col-sm-12.col-12
-                img(src="images/numbers.jpg" alt="numbers")
+        //-    .col-xl-8.col-lg-8.col-md-7.col-sm-12.col-12
+        //-        img(src="images/numbers.jpg" alt="numbers")
         .row#feature-equipment-2
             .col-xl-8.col-lg-8.col-md-7.col-sm-12.col-12
                 img(src="images/numbers.jpg" alt="numbers")
@@ -46,27 +46,27 @@ block body
                     enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea
                     commodo consequat.
-    div#team
-        p.meet_the_team.title MEET THE TEAM
-        .container
-            .row
-                .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
-                    .rounded-circle
-                        img.person-icon(src="images/dude.jpeg" alt="school badge")
-                    p.team_title TITLE
-                    p.team_position position
-                .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
-                    .rounded-circle
-                        img.person-icon(src="images/dude.jpeg" alt="school badge")
-                    p.team_title TITLE
-                    p.team_position position
-                .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
-                    .rounded-circle
-                        img.person-icon(src="images/dude.jpeg" alt="school badge")
-                    p.team_title TITLE
-                    p.team_position position
-                .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
-                    .rounded-circle
-                        img.person-icon(src="images/dude.jpeg" alt="school badge")
-                    p.team_title TITLE
-                    p.team_position position
+    .container-fluid#team
+        .row.py-5
+            .col-12
+                p.meet_the_team.title MEET THE TEAM
+            .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+                .rounded-circle
+                    img.person-icon(src="images/dude.jpeg" alt="school badge")
+                p.team_title TITLE
+                p.team_position position
+            .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+                .rounded-circle
+                    img.person-icon(src="images/dude.jpeg" alt="school badge")
+                p.team_title TITLE
+                p.team_position position
+            .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+                .rounded-circle
+                    img.person-icon(src="images/dude.jpeg" alt="school badge")
+                p.team_title TITLE
+                p.team_position position
+            .col-xl-3.col-lg-3.col-md-3.col-sm-6.col-6
+                .rounded-circle
+                    img.person-icon(src="images/dude.jpeg" alt="school badge")
+                p.team_title TITLE
+                p.team_position position
