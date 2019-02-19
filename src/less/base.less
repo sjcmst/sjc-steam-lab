@@ -27,8 +27,46 @@ button:focus {
     min-height: 100%;
     .title{
         font-weight: 900;
-        letter-spacing: 0.2rem;
-        padding: 0px 0px 1rem 0px;
+        letter-spacing: 0.5rem;
+        margin: 0px 0px 1rem 0px;
     }
 }
 
+.slack-button{
+    position: relative;
+    background: #d3d3d3;
+    z-index:1;
+    @button-offset: 0.3rem;
+
+    border-width:0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: (0.5-@button-offset);
+    padding-bottom: (0.5+@button-offset);
+
+    font-weight: 900;
+    color: @sjc_green_color;
+    letter-spacing: 0.5rem;
+    text-indent: 0.5rem;
+
+    &:before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height:100%;
+        background-color: white;
+        border-radius: 5px;
+        left:0;
+        top:-(@button-offset);
+        z-index:-1;
+        transition: all 0.2s ease-in-out
+    }
+    &:hover{
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        &:before{
+            top:0;
+        }
+    }
+
+}
