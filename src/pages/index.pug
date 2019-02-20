@@ -1,16 +1,26 @@
 extends ../layouts/default.pug
 block append variables
     - var currentPage="index";
+
 block content
-    .row.justify-content-center
-        .col-6.col-sm-4.col-md-3.pt-5
-            img(src='/images/yeoman.png' width='100%')
-        .col-12.pt-5
-            h1.text-center.allo 'Allo, Thanks for using this template!
-        .col-12.pt-3
-            p.text-center
-                | Visit the project's
-                a(href="https://github.com/andersoo/gulp-pug-es7-less") &nbsp;git&nbsp;
-                | for more information.
+    .container
+        .row.watch-video
+            .col-md-5.grey-triangles
+                img(src="images/grey-triangles.jpg" alt="grey triangle")
+            .col-md-7.busyness
+                p Admist the busyness of school life, SJC STEAM Lab provides the space for us to #[span Break the Cyle, Rise Above, Focus on Science]
+                p.watch WATCH
+            
+            
+        .row.justify-content-center
+            .col-6.col-sm-4.col-md-3.pt-5
+                img(src='/images/yeoman.png' width='100%')
+            .col-12.pt-5
+                h1.text-center.allo 'Allo, Thanks for using this template!
+            .col-12.pt-3
+                p.text-center
+                    | Visit the project's
+                    a(href="https://github.com/andersoo/gulp-pug-es7-less") &nbsp;git&nbsp;
+                    | for more information.
 
     
