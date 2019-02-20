@@ -1,22 +1,22 @@
 extends ../layouts/default.pug
 mixin project
-  .shadow.p-3.mx-3.my-3.test-border
-    img(src="images/hkoi.png" alt="HKOI").w-100
-    p.title.item-name ITEM NAME
-  div.btn.slack-button.view-details.my-4 VIEW DETAILS
+    .shadow.p-3.mx-3.my-3.test-border
+        img(src="images/hkoi.png" alt="HKOI").w-100
+        p.title.item-name ITEM NAME
+    div.btn.slack-button.view-details.my-4 VIEW DETAILS
 
 block append variables
     - var currentPage="projects";
 
 block content
-  .row
-    .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
-      +project
-    .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
-      +project
-    .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
-      +project
-    .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
-      +project
-    .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
-      +project
+    .row
+        .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
+            +project
+        .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
+            +project
+        .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
+            +project
+        .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
+            +project
+        .col-xl-4.col-lg-4.col-md-6.col-sm-12.col-12
+            +project

@@ -3,24 +3,49 @@ block append variables
     - var currentPage="index";
 
 block content
-    .container
-        .row.watch-video
-            .col-md-5.grey-triangles
-                img(src="images/grey-triangles.jpg" alt="grey triangle")
-            .col-md-7.busyness
-                p Admist the busyness of school life, SJC STEAM Lab provides the space for us to #[span Break the Cyle, Rise Above, Focus on Science]
-                p.watch WATCH
-            
-            
-        .row.justify-content-center
-            .col-6.col-sm-4.col-md-3.pt-5
-                img(src='/images/yeoman.png' width='100%')
-            .col-12.pt-5
-                h1.text-center.allo 'Allo, Thanks for using this template!
-            .col-12.pt-3
-                p.text-center
-                    | Visit the project's
-                    a(href="https://github.com/andersoo/gulp-pug-es7-less") &nbsp;git&nbsp;
-                    | for more information.
-
     
+    .row.watch-video
+        .col-md-5
+            img(src="images/grey-triangles.jpg" alt="grey triangle")
+        .col-md-7.busyness
+            p Admist the busyness of school life, SJC STEAM Lab provides the space for us to #[span Break the Cycle, Rise Above, Focus on Science]
+            p.watch WATCH
+            span.glyphicon.glyphicon-play-circle
+        
+    .row.clubs
+        .col-md-4
+            .frame
+                img(src="images/grey-triangles.jpg" alt="grey triangle")
+                p.title COMPUTER<br>SOCIETY
+        .col-md-4
+            .frame
+                img(src="images/grey-triangles.jpg" alt="grey triangle")
+                p.title COMPUTER<br>SOCIETY
+        .col-md-4
+            .frame
+                img(src="images/grey-triangles.jpg" alt="grey triangle")
+                p.title COMPUTER<br>SOCIETY
+        
+    .row.learn-more
+        .col-md-7.learn-more-column
+            p LEARN MORE
+            p More about the Lab
+            p More about the students in the space
+            p Current Projects
+            p Contact Us
+        
+        .col-md-5    
+    
+    
+    
+    
+    .row.justify-content-center
+        .col-6.col-sm-4.col-md-3.pt-5
+            img(src='/images/yeoman.png' width='100%')
+        .col-12.pt-5
+            h1.text-center.allo 'Allo, Thanks for using this template!
+        .col-12.pt-3
+            p.text-center
+                | Visit the project's
+                a(href="https://github.com/andersoo/gulp-pug-es7-less") &nbsp;git&nbsp;
+                | for more information.
