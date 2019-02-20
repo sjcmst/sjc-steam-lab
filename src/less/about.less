@@ -1,44 +1,41 @@
 @import "variable.less";
-@padding: 50px 70px 50px 70px;
 
 #main{
-    #about-steam-lab .col-xl-8{
-        background-color: @sjc_green_color;
-        padding: @padding;
-        color: #FFF;
-        font-weight: 700;
+    #about-steam-lab{ 
+        .col-xl-8{
+            background-color: @sjc_green_color;
+            color: #FFF;
+            font-weight: 700;
+        }
+        .col-xl-4{
+            img{
+                width: 100%;
+            }
+        }
     }
     #feature-equipment-1{
         background-color: @grey_bg_color;
-        background-image: url("/images/numbers.jpg");
+        background-image: url("/images/scratch.png");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
 
         color: #000;
-        .col-xl-4{
-            padding: @padding;
-        }
         .col-xl-8{
             padding-right: 0px;
             padding-left: 0px;
-            img{
-            }
         }
         padding-bottom: 0px;
     }
     #feature-equipment-2{
         background-color: #FFF;
         color: #000;
-        .col-xl-4{
-            padding: @padding;
-        }
         .col-xl-8{
             padding-right: 0px;
             padding-left: 0px;
-            img{
-                //height: 100%;
-            }
+        }
+        img{
+            width: 100%;
         }
     }
     #team{
@@ -52,9 +49,8 @@
         .team_title{
             text-align: center;
             color: @sjc_green_color;
-            font-weight: 900;
-            letter-spacing: 0.2rem;
             margin: 0px;
+            padding: 0px;
         }
         .team_position{
             text-align: center;
@@ -73,7 +69,5 @@
             width:100%;
         }
     }
-    img{
-        width: 100%;
-    }
+    
 }
