@@ -1,8 +1,9 @@
 @import "variable.less";
 
 #main{
-    .test-border{
+    .frame_height{
         border: 1px black solid;
+        min-height: 24rem;
     }
     .item-name{
         color: @sjc_green_color;
@@ -11,5 +12,34 @@
     .view-details{
         margin: 0 2rem 0 2rem;
         // SO STRANGE, rem works but not auto
+    }
+    #coming_soon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .rounded-circle{
+            overflow: hidden;
+            width: 4.3rem;
+            padding-bottom: 4rem;
+            border: 0.15rem @projects_dark_grey solid;
+            position: absolute;
+        }
+        .horizontal_line{
+            background-color: @projects_dark_grey;
+            width: 2rem;
+            height: 0.15rem;
+            position: absolute;
+        }
+        .vertical_line{
+            background-color: @projects_dark_grey;
+            height: 2rem;
+            width: 0.15rem;
+            position: absolute;
+        }
+        p{
+            color: @projects_dark_grey;
+            text-align: center;
+            margin-top: 8rem;
+        }
     }
 }
