@@ -1,11 +1,5 @@
 @import "variable.less";
 
-.allo{
-    font-family: @serif-font;
-}
-
-
-
 .watch-video{
     background-color: @grey_bg_color;
     margin: 3rem 0 5rem 0;
@@ -64,15 +58,41 @@
 
         li{
             margin-top: 1rem;
-        }
-        li a{
-            color: grey;
-            font-size: 0.7rem;
-        }
 
-        li span{
-            color: @sjc_green_color;
-            font-size: 2rem;
+            a{
+                .fas{
+                    color: @sjc_green_color;
+                }
+                .fas+span{
+                    color: grey;
+                    font-size: 0.7rem;
+                }
+            }
+            .fa-file{
+                font-size: 2rem;
+            }
+            .fa-lock{
+                font-size: 2rem;
+            }
+            .fa-folder-open{
+                font-size: 1.8rem;
+            }
+            .fa-wifi{
+                font-size: 1.6rem;
+            }
+            .fa-file+span{
+                padding-left: 1.25rem;
+            }
+            .fa-lock+span{
+                padding-left: 1rem;
+            }
+            .fa-folder-open+span{
+                padding-left: 0.7rem;
+            }
+            .fa-wifi+span{
+                padding-left: 0.7rem;
+            }
+
         }
 
         // Learn More tag
@@ -85,10 +105,10 @@
 
         //Read More tag
         li:nth-child(6) a{
-
-        text-decoration: underline;
-        letter-spacing: 0.1rem;
-        color: grey;
+            text-decoration: underline;
+            letter-spacing: 0.1rem;
+            color: grey;
+            font-size: 0.8rem;
         }
     }
 

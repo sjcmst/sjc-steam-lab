@@ -1,7 +1,3 @@
-let x = 'allo world';
-
-console.log(x);
-
 
 $(document).ready(function(){
     dropdownHandler();
@@ -27,6 +23,3 @@ function dropdownHandler(){
     );
 
 }
-
-    // $('#dropdown_about').dropdown('toggle');
-    // $('#dropdown_about').hover(dropdownHandler);
