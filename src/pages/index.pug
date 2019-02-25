@@ -1,17 +1,19 @@
 extends ../layouts/default.pug
 block append variables
     - var currentPage="index";
+    - var siteTitle = "HomePage Yo"; //- is this declaration put here?
 
 block content
-    
+    //- first row
     .row.watch-video
         .col-md-5
             img(src="images/grey-triangles.jpg" alt="grey triangle")
         .col-md-7.busyness
             p Admist the busyness of school life, SJC STEAM Lab provides the space for us to #[span Break the Cycle, Rise Above, Focus on Science]
-            p.watch WATCH
-            span.glyphicon.glyphicon-play-circle
-        
+            a(href="#!") WATCH 
+            span.fas.fa-play-circle
+    
+    //- second row
     .row.clubs
         .col-md-4
             .frame
@@ -26,26 +28,26 @@ block content
                 img(src="images/grey-triangles.jpg" alt="grey triangle")
                 p.title COMPUTER<br>SOCIETY
         
+    //- third row
     .row.learn-more
-        .col-md-7.learn-more-column
-            p LEARN MORE
-            p More about the Lab
-            p More about the students in the space
-            p Current Projects
-            p Contact Us
-        
-        .col-md-5    
-    
-    
-    
-    
-    .row.justify-content-center
-        .col-6.col-sm-4.col-md-3.pt-5
-            img(src='/images/yeoman.png' width='100%')
-        .col-12.pt-5
-            h1.text-center.allo 'Allo, Thanks for using this template!
-        .col-12.pt-3
-            p.text-center
-                | Visit the project's
-                a(href="https://github.com/andersoo/gulp-pug-es7-less") &nbsp;git&nbsp;
-                | for more information.
+        .col-md-7
+            ul.list-unstyled
+                li 
+                    a(href="#!") LEARN MORE
+                li 
+                    span.fas.fa-file
+                    a(href="#!") More about the Lab
+                li 
+                    span.fas.fa-lock
+                    a(href="#!") More about the students in the space
+                li 
+                    span.fas.fa-folder-open
+                    a(href="#!") Current Projects
+                li
+                    span.fas.fa-wifi
+                    a(href="#!") Contact Us
+                li 
+                    a(href="#!") READ MORE
+                
+        .col-md-5
+            img(src="images/grey-triangles.jpg" alt="grey triangle")
