@@ -3,16 +3,24 @@ block append variables
     - var currentPage="contact";
 
 block content
-    .row.text-center.grey-background
-        .col-12
-            p.ask-us-anything ASK US ANYTHING
-            form
+    form.py-5.grey-background.text-center
+        .row
+            .col-12
+                p.ask-us-anything ASK US ANYTHING
+        .row
+            .col-12
                 .form-group
-                    input(type="text", class="form-control", aria-describedby="name", placeholder="NAME")
+                    input.form-control(type="text", aria-describedby="name", placeholder="NAME")
+        .row
+            .col-12               
                 .form-group
-                    input(type="email", class="form-control", aria-describedby="email", placeholder="EMAIL")
+                    input.form-control(type="email", aria-describedby="email", placeholder="EMAIL")
+        .row
+            .col-12                
                 .form-group
-                    input(type="email", class="form-control", aria-describedby="message", placeholder="MESSAGE")
+                    textarea.form-control(aria-describedby="message", placeholder="MESSAGE", rows="7")
+        .row
+            .col-12    
                 a(href="#!")
-                    div.btn.slack-button SEND   
+                    .btn.slack-button SEND   
         
