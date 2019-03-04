@@ -1,41 +1,28 @@
 extends ../layouts/default.pug
+
+mixin category(number)
+    a.title(role="button" data-toggle="collapse" href=`#cat${number}` aria-expanded="false" aria-controls=`cat${number}`) CATEGORY #{number}
+    .collapse(id=`cat${number}`)
+        .init-bar
+        p.question Q: Liquam ex cquam, fringilla ac ligula vitae?
+        p.answer A: Nulla euismod elementum.
+        p.question Q: Liquam ex cquam, fringilla ac ligula vitae?
+        p.answer A: Nulla euismod elementum.
+        p.question Q: Liquam ex cquam, fringilla ac ligula vitae?
+        p.answer A: Nulla euismod elementum.
+        .end-bar
 block append variables
     - var currentPage="faq";
 
 block content
-  p.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document. 
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document. 
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document. 
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document. 
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document. 
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
-    Embed FontTo embed your selected fonts into a webpage, copy this code into the of your HTML document.
+  .container-fluid#faq_green.mt-5
+    h3.title FAQ
+    +category(1)
+    br
+    +category(2)
+    br
+    +category(3)
+    br
+    +category(4)
+    br
+    +category(5)
