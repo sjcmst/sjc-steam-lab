@@ -11,6 +11,9 @@
         flex-wrap: nowrap;
     }
 
+    li.dropdown .same_line{
+        display: inline-flex;
+    }
     a.navbar-brand {
         color: @sjc_green_color;
     }
@@ -23,7 +26,7 @@
         color: silver;
     }
 
-    .nav-item.active a.nav-link {
+    a.active,li.active a{
         color: @sjc_green_color;
     }
 
@@ -46,13 +49,9 @@
             }
 
         }
-
-        #dropdown_about::after {
-            content: "+";
-            padding-left: 0.5rem;
-        }
         #dropdown_about.active{
-            color: @sjc_green_color;
+            position: relative;
+            left: 0.2rem;
         }
     }
 }

@@ -6,20 +6,21 @@ $(document).ready(function(){
 
 
 function dropdownHandler(){
-    $('.navbar-nav > li').hover(
+    $('#dropdown_about').hover(
         function(){
             console.log("hover");
-            $(this).find(".dropdown-menu").show();
+            $(this).parent().parent().find(".dropdown-menu").show();
         },
         function(){
-            $(this).find(".dropdown-menu").hide();
+            console.log("hide");
+            /*$(this).parent().parent().find(".dropdown-menu").hide();*/
         }
     );
-    $('.navbar-nav > li').click(
+    /*$('.navbar-nav > li').click(
         function(){
             console.log("click");
             window.location.href = 'about.html';
         }
-    );
+    );*/
 
 }
