@@ -6,7 +6,6 @@ $(document).ready(function(){
 
 
 function dropdownHandler(){
-    var flag = false;
     var $dropdownMenu = $("#sjc-dropdown");
 
     $('#dropdown_about').hover(
@@ -15,10 +14,14 @@ function dropdownHandler(){
             $dropdownMenu.show();
         },
         function(){
-            if(!flag){
-                console.log("close menu");
-                $dropdownMenu.hide();
+            console.log("close menu");
+            $dropdownMenu.hide();
             }
+    );
+    $('#sjc-dropdown-projects').click(
+        function(){
+            console.log("going to projects page");
+            window.location.replace("projects.html");
         }
     );
 
