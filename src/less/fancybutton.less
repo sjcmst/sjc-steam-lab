@@ -2,18 +2,17 @@
 
 .fancybutton{
     position: relative;
-    background: #d3d3d3;
     z-index:1;
     @button-offset: 0.3rem;
 
     border-width:0;
+    border-radius: 5px;
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: (0.5-@button-offset);
     padding-bottom: (0.5+@button-offset);
 
     font-weight: 900;
-    color: @sjc_green_color;
     letter-spacing: 0.4rem;
     text-indent: 0.5rem;
 
@@ -22,7 +21,6 @@
         position: absolute;
         width: 100%;
         height:100%;
-        background-color: white;
         border-radius: 5px;
         left:0;
         top:-(@button-offset);
@@ -45,8 +43,12 @@
         }
     }
 
-    &.buttonwhite:before{
-        background-color: white;
+    &.buttonwhite{
+        background-color: #d3d3d3;
+        color: @sjc_green_color;
+        &:before{
+            background-color: white
+        }
     }
 
 }
