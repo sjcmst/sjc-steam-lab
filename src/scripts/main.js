@@ -6,20 +6,28 @@ $(document).ready(function(){
 
 
 function dropdownHandler(){
-    $('.navbar-nav > li').hover(
+    var flag = false;
+    var $dropdownMenu = $("#sjc-dropdown");
+
+    $('#dropdown_about').hover(
         function(){
-            console.log("hover");
-            $(this).find(".dropdown-menu").show();
+            console.log("trigger hover");
+            $dropdownMenu.show();
         },
         function(){
-            $(this).find(".dropdown-menu").hide();
+            if(!flag){
+                console.log("close menu");
+                $dropdownMenu.hide();
+            }
         }
     );
-    $('.navbar-nav > li').click(
+
+    /*$('.navbar-nav > li').click(
         function(){
             console.log("click");
             window.location.href = 'about.html';
         }
-    );
+    );*/
 
 }
+

@@ -14,13 +14,15 @@
                             a.nav-link(href='contact.html') CONTACT
                             
                         li.nav-item.dropdown
-                            a#dropdown_about.nav-link(href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class={'active': currentPage === 'about'}) ABOUT
-                            .dropdown-menu(aria-labelledby="dropdown_about")
-                                a.dropdown-item(href="projects.html" class={'active': currentPage === 'projects'}) PROJECTS
-                                a.dropdown-item(href="faq.html" class={'active': currentPage === 'faq'}) FAQ
+                            div.same_line
+                                a.nav-link(href='about.html' class={'active': currentPage === 'about'}) ABOUT
+                                #dropdown_about.nav-link(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class={'active': currentPage === 'about'}) +
+                                    #sjc-dropdown.dropdown-menu(aria-labelledby="dropdown_about")
+                                        a.dropdown-item(href="projects.html" class={'active': currentPage === 'projects'}) PROJECTS
+                                        a.dropdown-item(href="faq.html" class={'active': currentPage === 'faq'}) FAQ
                                     
                         li.nav-item(class={'active': currentPage === 'students'})
-                            a.nav-link(href='students.html') STUDENTS
+                            a.nav-link(href='students.html' ) STUDENTS
                             
                         li.nav-item(class={'active': currentPage === 'index'})
-                            a.nav-link(href='index.html') HOME
+                            a.nav-link(href='index.html' ) HOME
