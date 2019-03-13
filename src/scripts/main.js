@@ -6,16 +6,22 @@ $(document).ready(function(){
 
 
 function dropdownHandler(){
+    var flag = false;
+    var $dropdownMenu = $("#sjc-dropdown");
+
     $('#dropdown_about').hover(
         function(){
-            console.log("hover");
-            $(this).parent().parent().find(".dropdown-menu").show();
+            console.log("trigger hover");
+            $dropdownMenu.show();
         },
         function(){
-            console.log("hide");
-            /*$(this).parent().parent().find(".dropdown-menu").hide();*/
+            if(!flag){
+                console.log("close menu");
+                $dropdownMenu.hide();
+            }
         }
     );
+
     /*$('.navbar-nav > li').click(
         function(){
             console.log("click");
@@ -24,3 +30,4 @@ function dropdownHandler(){
     );*/
 
 }
+

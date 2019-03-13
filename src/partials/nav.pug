@@ -16,10 +16,10 @@
                         li.nav-item.dropdown
                             div.same_line
                                 a.nav-link(href='about.html' class={'active': currentPage === 'about'}) ABOUT
-                                a#dropdown_about.nav-link(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class={'active': currentPage === 'about'}) +
-                            .dropdown-menu(aria-labelledby="dropdown_about")
-                                a.dropdown-item(href="projects.html" class={'active': currentPage === 'projects'}) PROJECTS
-                                a.dropdown-item(href="faq.html" class={'active': currentPage === 'faq'}) FAQ
+                                #dropdown_about.nav-link(data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class={'active': currentPage === 'about'}) +
+                                    #sjc-dropdown.dropdown-menu(aria-labelledby="dropdown_about")
+                                        a.dropdown-item(href="projects.html" class={'active': currentPage === 'projects'}) PROJECTS
+                                        a.dropdown-item(href="faq.html" class={'active': currentPage === 'faq'}) FAQ
                                     
                         li.nav-item(class={'active': currentPage === 'students'})
                             a.nav-link(href='students.html' ) STUDENTS
