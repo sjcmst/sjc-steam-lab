@@ -26,7 +26,7 @@ html.no-js(lang='')
 
         include ../partials/nav.pug
 
-        .container#main
+        .container.main_container(id=`${currentPage}`)
             block content
                 p Hello world! This is HTML5 Boilerplate.
 
