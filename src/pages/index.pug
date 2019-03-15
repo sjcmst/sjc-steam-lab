@@ -1,4 +1,11 @@
 extends ../layouts/default.pug
+
+mixin clubs(clubname)
+    .frame
+        img(src="images/grey-triangles.jpg" alt="grey triangle")
+        p.title=clubname 
+            |<br>SOCIETY
+
 block append variables
     - var currentPage="index";
     - var siteTitle = "HomePage Yo"; //- is this declaration put here?
@@ -17,17 +24,11 @@ block content
     //- second row
     .row.clubs
         .col-md-4
-            .frame
-                img(src="images/grey-triangles.jpg" alt="grey triangle")
-                p.title COMPUTER<br>SOCIETY
+            +clubs("COMPUTER")
         .col-md-4
-            .frame
-                img(src="images/grey-triangles.jpg" alt="grey triangle")
-                p.title COMPUTER<br>SOCIETY
+            +clubs("MATHEMATICS")
         .col-md-4
-            .frame
-                img(src="images/grey-triangles.jpg" alt="grey triangle")
-                p.title COMPUTER<br>SOCIETY
+            +clubs("SCIENCE")
         
     //- third row
     .row.learn-more

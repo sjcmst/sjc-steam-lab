@@ -1,9 +1,11 @@
 extends ../layouts/default.pug
+include ../partials/fancybutton.pug
 block append variables
     - var currentPage="contact";
+    
 
 block content
-    form.py-5.grey-background.text-center
+    form.py-5.grey-background.text-center(action="/action_page.php")
         .row
             .col-12
                 p.ask-us-anything ASK US ANYTHING
@@ -22,5 +24,5 @@ block content
         .row
             .col-12    
                 a(href="#!")
-                    .btn.slack-button SEND   
+                    +fancybutton("buttongreen", "SEND")
         
